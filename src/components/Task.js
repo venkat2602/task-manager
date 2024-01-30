@@ -5,7 +5,7 @@ const Task = ({ title, content, onDelete, id }) => {
     onDelete(id);
   }
   return (
-    <div className='w-60 p-3 shadow-lg rounded-lg relative'>
+    <div className='w-full p-3 shadow-lg rounded-lg relative'>
       <h1>{title}</h1>
       <p>{content}</p>
       <button onClick={handleClick} className='absolute bottom-1 right-1'>

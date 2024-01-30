@@ -22,7 +22,7 @@ function App() {
     <div className='text-2xl'>
       <Header />
       <CreateTask addTask={addTask} />
-      <div className='flex flex-wrap gap-3 mt-6 mx-2'>
+      <div className='grid grid-cols-2 sm:grid-cols-4 place-content-center place-items-center gap-3 mt-10 mx-5'>
         {tasks.map((task, index) => {
           return <Task key={index} {...task} id={index} onDelete={onDelete} />;
         })}

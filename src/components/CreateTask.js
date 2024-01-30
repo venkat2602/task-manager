@@ -43,7 +43,7 @@ const CreateTask = ({ addTask }) => {
           onClick={expand}
           onChange={handleChange}
           value={task.content}
-          placeholder='Take a note...'
+          placeholder='Take a task...'
           rows={isExpanded ? 3 : 1}
           className='p-1'
         />
