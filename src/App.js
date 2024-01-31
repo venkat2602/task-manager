@@ -18,16 +18,36 @@ function App() {
       })
     );
   }
+
+  function onEdit(id, editedTask) {
+    var edited = [];
+    for (let i = 0; i < tasks.length; i++) {
+      if (i === id) {
+        edited.push(editedTask);
+      } else {
+        edited.push(tasks[i]);
+      }
+    }
+    setTasks(edited);
+  }
   return (
     <div className='text-2xl'>
       <Header />
       <CreateTask addTask={addTask} />
       <div className='grid grid-cols-2 sm:grid-cols-4 place-content-center place-items-center gap-3 mt-10 mx-5'>
         {tasks.map((task, index) => {
-          return <Task key={index} {...task} id={index} onDelete={onDelete} />;
+          return (
+            <Task
+              key={index}
+              {...task}
+              id={index}
+              onDelete={onDelete}
+              onEdit={onEdit}
+            />
+          );
         })}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

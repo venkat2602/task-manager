@@ -48,7 +48,7 @@ const CreateTask = ({ addTask }) => {
           className='p-1 text-xl font-normal'
         />
         <div
-          className='absolute right-2 -bottom-6 w-14 h-14 bg-yellow-400 rounded-full flex justify-center items-center'
+          className='absolute right-2 -bottom-6 w-14 h-14 hover:w-16 hover:h-16 bg-yellow-400 rounded-full flex justify-center items-center'
           onClick={submitNote}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
