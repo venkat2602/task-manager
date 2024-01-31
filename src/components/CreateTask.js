@@ -34,7 +34,7 @@ const CreateTask = ({ addTask }) => {
             onChange={handleChange}
             value={task.title}
             placeholder='Title'
-            className='p-1'
+            className='p-1 text-2xl font-semibold'
           />
         )}
 
@@ -45,7 +45,7 @@ const CreateTask = ({ addTask }) => {
           value={task.content}
           placeholder='Take a task...'
           rows={isExpanded ? 3 : 1}
-          className='p-1'
+          className='p-1 text-xl font-normal'
         />
         <div
           className='absolute right-2 -bottom-6 w-14 h-14 bg-yellow-400 rounded-full flex justify-center items-center'
@@ -64,11 +64,6 @@ const CreateTask = ({ addTask }) => {
             />
           </svg>
         </div>
-        {/* <Zoom in={isExpanded}>
-          <Fab >
-            <AddIcon />
-          </Fab>
-        </Zoom> */}
       </form>
     </div>
   );

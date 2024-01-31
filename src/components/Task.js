@@ -6,8 +6,8 @@ const Task = ({ title, content, onDelete, id }) => {
   }
   return (
     <div className='w-full p-3 shadow-lg rounded-lg relative'>
-      <h1>{title}</h1>
-      <p>{content}</p>
+      <h1 className='text-2xl font-semibold'>{title}</h1>
+      <p className='text-xl font-normal'>{content}</p>
       <button onClick={handleClick} className='absolute bottom-1 right-1'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
